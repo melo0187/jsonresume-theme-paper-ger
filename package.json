@@ -1,17 +1,17 @@
 {
-  "name": "jsonresume-theme-paper",
-  "version": "0.3.2",
+  "name": "jsonresume-theme-paper-ger",
+  "version": "0.0.1",
   "description": "A theme for JSON Resume",
-  "author": "Tim Daubenschütz",
+  "author": "Carmelo Scollo",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TimDaub/jsonresume-theme-paper"
+    "url": "https://github.com/melo0187/jsonresume-theme-paper-ger"
   },
   "license": "MIT",
   "dependencies": {
     "handlebars": "^2.0.0-alpha.4"
   },
-  "homepage": "https://github.com/TimDaub/jsonresume-theme-paper",
+  "homepage": "https://github.com/melo0187/jsonresume-theme-paper-ger",
   "main": "index.js",
   "scripts": {
     "start": "resume serve"
