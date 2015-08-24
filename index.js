@@ -52,15 +52,10 @@ function render(resume) {
     return options.fn(items.join(', '));
   });
 
-  // return Handlebars.compile(template)({
-  //   css: css,
-  //   resume: resume
-  // });
-
   //Uncomment this for printing as .pdf
 	return Handlebars.compile(template)({
 		css: css,
-    print: print,
+		print: print,
 		resume: resume
 	});
 }
