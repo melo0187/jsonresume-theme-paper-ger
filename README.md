@@ -1,59 +1,31 @@
-# JSON-Resume-Paper
+# JSON-Resume-Paper - German version
 
-This is a theme for [JSON Resume](http://jsonresume.org/).
-It is available via npm:
+This is a German theme for [JSON Resume](http://jsonresume.org/).
+It is based on [jsonresume-theme-paper](https://github.com/TimDaub/jsonresume-theme-paper) from Tim Daubenschütz.
+Head over to his repository to find out more.
 
-```
-npm install jsonresume-theme-paper
-```
+I want to clarify that I do not think this is the right way to go for theme translation. From what I understand there is no translation / multi-language support in [JSON Resume](http://jsonresume.org/), yet. The schema does not support it, nor do the resume-cli or themes. See also the open issue [Internationalization](https://github.com/jsonresume/resume-schema/issues/35).
+This is why I do not intend to publish this on npm.
 
-## PDF / Printing
-
-Since the printing functionality of `resume-cli` is a utter catastrophy where your `.html` file gets
-posted to a webservice for converted to `.pdf` this theme will not support this process.
-
-**BUT**
-
-I've implemented another `.css` file that gets included with a attribute `print`: `media="print"`.
-
-So if you're trying to convert your resume from `.html` to `.pdf` just use Google Chrome and 
-then PDF Print!
-
-In my opinion this does the best job in formating and layouting.
-
-
-## Demo
-You can check out a static demo of the resume on codepen.io: http://codepen.io/TimDaub/pen/bfCLz
-
-
-The folks over at jsonschema.org did an awesome job promoting my theme, so you can check it out here as well: http://themes.jsonresume.org/theme/paper
+However if like me you feel the need to get a German version of your paper themed CV, clone this repo and get started.
 
 ## Getting started
+This is what you need to do, to get your German, paper themed CV (assuming you have a complete and valid resume.json).
 
-To get started with theme development, this is what you'll need:
+###Requirements
+To use this, this is what you'll need:
 
 - [node.js](http://howtonode.org/how-to-install-nodejs)
 - [npm](http://howtonode.org/introduction-to-npm)
 
-If you're on Linux, you can simply run:
+### Install the resume command line
 
-```
-sudo apt-get install nodejs-legacy npm
-```
-
-Or if you're on OSX and got [Homebrew](http://brew.sh/) installed:
-```
-brew install node
-```
-
-### Install the command line
-
-We're going to use the official [resume-cli](https://github.com/jsonresume/resume-cli) to run our development server.
+We're going to use the official [resume-cli](https://github.com/jsonresume/resume-cli) to generate our CV.
 
 Go ahead and install it:
 
 ```
-sudo npm install -g resume-cli
+npm install -g resume-cli
 ```
 
 ### Install npm packages
@@ -61,30 +33,28 @@ sudo npm install -g resume-cli
 We need to install the dependencies. `cd` into the theme folder we just downloaded and run:
 
 ```bash
-sudo npm install
-bower install
+npm install
 ```
 
 This will read the local `package.json` and install the packages listed under `dependencies`.
 
-### Serve theme
+### Get your CV
+Copy your complete and valid resume.json into the theme folder.
 
 While inside the theme folder, simply run:
 
 ```
-resume serve
+npm start
 ```
-
-You should now see this message:
+This will run the start script defined in package.json (in our case resume serve).
+The output will look something like this:
 
 ```
 Preview: http://localhost:4000
 Press ctrl-c to stop
 ```
 
-Congratulations, you've made it!
-
-__The theme development can now begin.__
+You should now see the CV in your browser and can use it's built in print feature to export your CV as pdf.
 
 
 ## License
