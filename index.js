@@ -4,7 +4,7 @@ var Handlebars = require("handlebars");
 function render(resume) {
 
 	var css = fs.readFileSync(__dirname + "/css/style.css", "utf-8");
-	var template = fs.readFileSync(__dirname + "/resume.template", "utf-8");
+	var template = fs.readFileSync(__dirname + "/template/resume.template", "utf-8");
 
   // Uncomment this for printing as .pdf
   var print = fs.readFileSync(__dirname + "/css/print.css", "utf-8");

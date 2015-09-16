@@ -1,7 +1,7 @@
 {
   "name": "jsonresume-theme-paper-ger",
-  "version": "0.0.1",
-  "description": "A theme for JSON Resume",
+  "version": "0.0.2",
+  "description": "A German theme for JSON Resume",
   "author": "Carmelo Scollo",
   "repository": {
     "type": "git",
