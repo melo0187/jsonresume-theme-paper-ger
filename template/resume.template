@@ -129,33 +129,6 @@
 				</section>
 				{{/if}}
 
-				<!-- PROFILES -->
-				{{#resume.basics}}
-				{{#if profiles.length}}
-				<section class="content profiles">
-					<div class="row">
-						<div class="content-cat">
-							Profile
-						</div>
-
-						<div class="content-text profiles-listing">
-							<ul>
-								{{#each profiles}}
-								{{#if network}}
-								<li>
-									<a href="{{url}}" target="_blank">
-										{{network}}
-									</a>
-								</li>
-								{{/if}}
-								{{/each}}
-							</ul>
-						</div>
-					</div>
-				</section>
-				{{/if}}
-				{{/resume.basics}}
-
 				<!-- WORK -->
 				{{#if resume.work.length}}
 				{{#foreach resume.work}}
